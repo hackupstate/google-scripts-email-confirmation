@@ -13,6 +13,9 @@
 function myFunction(e) {
   
   var values = e.namedValues; // get all the values 
+
+  var eventRomanNumeral = "XIII";
+  var eventDate = "April 6-7, 2019!";
  
   var timestamp = e.values[0];
   var name = e.values[1];
@@ -23,11 +26,11 @@ function myFunction(e) {
   var codeOfConduct = e.values[6];
   var over18 = e.values[7];
 
-  var subject = "Thanks for signing up for Hack Upstate XIII on April 6-7, 2019!!";
+  var subject = 'Thanks for signing up for Hack Upstate ' + eventRomanNumeral + ' on ' + eventDate;
   
-  var htmlToSend = '<h1>Thanks for signing up for Hack Upstate XIII on April 6-7, 2019!</h1>' +
+  var htmlToSend = '<h1>Thanks for signing up for Hack Upstate ' + eventRomanNumeral + ' on ' + eventDate + '</h1>' +
                '<p>If you have any questions in the meantime, feel free to reach out to team@hackupstate.com, or join our Slack community here: http://huslack.herokuapp.com/ </p>' +
-               '<p>Here is what you submitted on the form: </p>' +
+               '<h2>Here is what you submitted</h2>' +
                  
                '<p><b>First and Last Name:</b> ' + name + '</p>' +
                '<p><b>Email:</b> ' + email + '</p>' +
