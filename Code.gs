@@ -22,6 +22,8 @@ function myFunction(e) {
   var dietaryRestrictions = e.values[5];
   var codeOfConduct = e.values[6];
   var over18 = e.values[7];
+
+  var subject = "Thanks for signing up for Hack Upstate XIII on April 6-7, 2019!!";
   
   var htmlToSend = '<h1>Thanks for signing up for Hack Upstate XIII on April 6-7, 2019!</h1>' +
                '<p>If you have any questions in the meantime, feel free to reach out to team@hackupstate.com, or join our Slack community here: http://huslack.herokuapp.com/ </p>' +
@@ -37,16 +39,6 @@ function myFunction(e) {
                  
                '<p>We can\'t wait to see what you\'ll build! </p>' + 
                '<p>Happy Hacking!</p>';
-  
-  var subject = "Thanks for signing up for Hack Upstate XIII on April 6-7, 2019!!";
-  
-  // var message = "Thanks for signing up for Hack Upstate XIII on April 6-7, 2019! We're looking forward to seeing you there. You're all set :)" +
-                "\n\nIf you have any questions in the meantime, feel free to reach out to me directly, email team@hackupstate.com, or join our Slack community here: http://huslack.herokuapp.com/" +
-                "\n\nWe can't wait to see what you'll build!" +
-                "\n\nHappy Hacking!"
-            
-  // Send the message to the user as a string
-  // MailApp.sendEmail(email, subject, message); // if sending as a string, do it this way
                 
   // Send the message to the user as HTML
   MailApp.sendEmail(email, subject, '', {
